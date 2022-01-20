@@ -1,0 +1,553 @@
+/*
+Theme Name: PressBook News
+Theme URI: https://scriptstown.com/wordpress-themes/pressbook-news/
+Author: ScriptsTown
+Author URI: https://scriptstown.com/
+Description: PressBook News is an excellent theme for news portals, blogs, entertainment, magazine, and educational websites. It offers a fully responsive, mobile-friendly, creative layout built with modern design techniques and provides clean, easy-to-read typography. The elements of the theme include single and double sticky sidebar widget area, header and footer blocks to place resuable Gutenberg blocks, multiple page templates and page-level settings, multi-level dropdown menu, social links, topbar banner advertisement area, background, and header image. This theme can be a great choice for digital marketing and news agency websites with an interactive look and feel. The design of the blog feed is suitable for posting story and status updates, movies reviews, animes reviews, and opinions, events feed, newsflash, publishing broadcastradio messages, television news, or any type of newsfeed. The theme also offers posts carousel sliders with autoplay in the header, footer, and related posts sections. Each carousel has a set of specific options to configure them in an easy manner. The blog posts in the carousel can be shown randomly or in any order based on multiple categories and tags. This theme can also be used for schools, university, educational institutes, or academics websites to publish any course materials or notices for the students. The theme uses minimal dependencies so it loads the website very fast with high speed and offers a seamless user experience for its visitors.
+Template: pressbook
+Version: 1.0.9
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pressbook-news
+Tags: blog, entertainment, news, one-column, two-columns, three-columns, left-sidebar, right-sidebar, block-styles, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Links & Buttons
+# Top Navbar
+# Site Branding
+# Primary Navbar
+# Primary Menu Search
+# Posts Carousel
+# Related Posts Carousel
+# Sidebar Widgets
+# Footer Widgets
+# Go to Top
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: 'IBM Plex Serif', 'Georgia', 'Times New Roman', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+	font-family: 'Lora', 'Cambria', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Links & Buttons
+--------------------------------------------------------------*/
+a {
+	color: #537cff;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #ff4056;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.more-link,
+.wp-block-search .wp-block-search__button {
+	background-image: linear-gradient(to left, #406dff 0%, #537cff 51%, #406dff 100%);
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.wp-block-search .wp-block-search__button {
+	padding-top: 6px;
+	padding-bottom: 8px;
+}
+
+.more-link {
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #ff4056;
+}
+
+.c-sidebar a:hover,
+.c-sidebar a:focus,
+.c-sidebar a:active {
+	color: #ff4056;
+}
+
+.copyright-text a {
+	color: #ff4056;
+}
+
+/*--------------------------------------------------------------
+# Top Navbar
+--------------------------------------------------------------*/
+.top-navbar {
+	padding: .1em 0;
+	background: linear-gradient(0deg, #537cff 0%, #406dff 100%);
+}
+
+.top-menus li {
+	padding: .3rem .6rem;
+	border: 0;
+}
+
+.top-navigation {
+	font-size: .85em;
+}
+
+.social-navigation a .svg-icon {
+	width: 1.65em;
+	height: 1.65em;
+	padding: .15em;
+}
+
+.social-navigation a:hover .svg-icon,
+.social-navigation a:focus .svg-icon,
+.social-navigation a:active .svg-icon {
+	color: #537cff;
+}
+
+@media screen and (min-width: 768px) {
+	.top-navigation {
+		text-align: right;
+	}
+
+	.top-navigation .menu {
+		justify-content: flex-start;
+	}
+
+	.social-navigation {
+		text-align: left;
+	}
+
+	.social-navigation .menu {
+		justify-content: flex-end;
+	}
+
+	.social-navigation a .svg-icon {
+		width: 1.6em;
+		height: 1.6em;
+	}
+}
+
+/*--------------------------------------------------------------
+# Site Branding
+--------------------------------------------------------------*/
+.site-branding {
+	padding-top: 1.1em;
+	padding-bottom: 1.3em;
+}
+
+/*--------------------------------------------------------------
+# Primary Navbar
+--------------------------------------------------------------*/
+.primary-navbar,
+.main-navigation li,
+.main-navigation ul ul li {
+	padding: 0;
+}
+
+.main-navigation:not(.toggled):not(.main-navigation--touch) ul li:hover>ul,
+.main-navigation ul li.focus>ul {
+	top: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation .menu>li:first-child {
+		padding: 0 0 0 .2em;
+	}
+
+	.main-navigation .menu>li:not(:first-child) {
+		padding: 0 .2em 0 .2em;
+	}
+
+	.main-navigation ul ul li.menu-item-has-children {
+		padding-left: .4em;
+	}
+
+	.main-navigation:not(.toggled):not(.main-navigation--touch) ul li:hover>ul,
+	.main-navigation ul li.focus>ul {
+		top: 100%;
+	}
+
+	.main-navigation:not(.toggled):not(.main-navigation--touch) ul ul li:hover>ul,
+	.main-navigation ul ul li.focus>ul {
+		top: 0;
+	}
+}
+
+.primary-navbar,
+.main-navigation ul ul {
+	background: #1c1c21;
+}
+
+.primary-menu-toggle .svg-icon {
+	width: 1.7em;
+	height: 1.75em;
+}
+
+.main-navigation-arrow-btn {
+	align-self: stretch;
+}
+
+.main-navigation-arrow-btn .svg-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
+}
+
+.main-navigation a {
+	position: relative;
+	padding: .7em .8em .95em .8em;
+}
+
+.primary-navbar-no-border .main-navigation a {
+	padding-bottom: .775em;
+}
+
+.main-navigation .menu>.menu-item>a::before {
+	position: absolute;
+	top: -6px;
+	right: 0;
+	height: 6px;
+	width: 100%;
+	border-radius: 8px 3px 0px 0px;
+	opacity: 0;
+	transition: all .2s ease-out 0s;
+}
+
+.primary-navbar-no-border .main-navigation .menu>.menu-item>a::before {
+	display: none;
+}
+
+.main-navigation .menu>.menu-item>a:hover::before,
+.main-navigation .menu>.menu-item>a:focus::before,
+.main-navigation .menu>.menu-item>a:active::before,
+.main-navigation .menu>.current-menu-ancestor>a::before,
+.main-navigation .menu>.current-menu-item>a::before,
+.main-navigation .menu>.current-menu-parent>a::before {
+	opacity: 1;
+}
+
+.main-navigation .menu>.menu-item>a::before,
+.main-navigation .menu .current-menu-ancestor>a,
+.main-navigation .menu .current-menu-item>a,
+.main-navigation .menu .current-menu-parent>a {
+	background: #ff4056;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation-arrow-btn {
+		align-self: center;
+	}
+
+	.main-navigation .menu>.menu-item>a::before,
+	.main-navigation .menu>.current-menu-ancestor>a::before,
+	.main-navigation .menu>.current-menu-item>a::before,
+	.main-navigation .menu>.current-menu-parent>a::before {
+		content: "";
+	}
+}
+
+.main-navigation:not(.toggled) li:hover>.main-navigation-arrow-btn,
+.main-navigation li.focus>.main-navigation-arrow-btn,
+.main-navigation .main-navigation-arrow-btn:hover,
+.main-navigation .main-navigation-arrow-btn:active,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active {
+	color: #fff;
+	background: #ff4056;
+}
+
+/*--------------------------------------------------------------
+# Primary Menu Search
+--------------------------------------------------------------*/
+.primary-navbar .primary-menu-search .primary-menu-search-toggle {
+	width: 36px;
+	height: 36px;
+	padding: .5em;
+}
+
+.primary-navbar .primary-menu-search-toggle .svg-icon {
+	width: 1.1em;
+	height: 1.1em;
+}
+
+.primary-navbar .main-navigation .primary-menu-search {
+	padding-top: 1.6em;
+	padding-bottom: .8em;
+}
+
+@media screen and (min-width: 768px) {
+	.primary-navbar .main-navigation .primary-menu-search {
+		padding-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Posts Carousel
+--------------------------------------------------------------*/
+.carousel-posts {
+	position: relative;
+	color: #404040;
+}
+
+.header-carousel-posts {
+	margin-top: 1.5em;
+}
+
+.footer-carousel-posts {
+	margin-bottom: 1.5em;
+}
+
+.carousel-posts .glide__slides {
+	margin: 0 25px;
+}
+
+.carousel-posts .glide__slide {
+	display: flex;
+	height: 105px;
+	margin: 0;
+	padding: .5em 0;
+	background: #fff;
+}
+
+.carousel-posts .carousel-post-image-wrap {
+	max-width: 75px;
+	margin-right: .5em;
+	overflow: hidden;
+}
+
+.carousel-posts .carousel-post-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	transition: .3s all;
+}
+
+.carousel-posts .carousel-post-image-link:hover img {
+	transform: scale(1.1);
+}
+
+.carousel-posts .carousel-post-title-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 1em;
+	word-break: break-word;
+	word-wrap: break-word;
+	padding-left: .5em;
+}
+
+@media screen and (min-width: 1024px) {
+	.carousel-posts .carousel-post-title-wrap {
+		padding-left: .25em;
+	}
+
+	.carousel-posts .carousel-post-only-title .carousel-post-title-wrap {
+		padding-left: .7em;
+	}
+}
+
+.carousel-posts .carousel-post-title-link,
+.carousel-post-taxonomy-link,
+.carousel-posts .carousel-post-excerpt {
+	font-size: .9em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.carousel-posts .carousel-post-title-link {
+	text-decoration: none;
+	font-weight: 600;
+	color: inherit;
+	-webkit-line-clamp: 2;
+}
+
+.carousel-posts .carousel-post-title-link:hover,
+.carousel-posts .carousel-post-title-link:focus,
+.carousel-posts .carousel-post-title-link:active {
+	color: #ff4056;
+}
+
+.carousel-post-taxonomy-link,
+.carousel-posts .carousel-post-excerpt {
+	margin: .25em 0;
+	-webkit-line-clamp: 1;
+}
+
+.carousel-post-taxonomy-link {
+	text-decoration: none;
+	font-size: .85em;
+	font-weight: 600;
+}
+
+.carousel-posts .glide__arrow {
+	position: absolute;
+	top: 0;
+	width: 30px;
+	height: 100%;
+	padding: 6px 8px;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #fff;
+	color: inherit;
+	opacity: .9;
+	cursor: pointer;
+	transition: .3s all;
+}
+
+.carousel-posts .glide__arrow:hover,
+.carousel-posts .glide__arrow:focus,
+.carousel-posts .glide__arrow:active {
+	background: #406dff;
+	color: #fff;
+}
+
+.carousel-posts .glide__arrow--left {
+	left: 0;
+}
+
+.carousel-posts .glide__arrow--right {
+	right: 0;
+}
+
+.carousel-posts .glide__arrow--left .svg-icon {
+	transform: rotate(90deg);
+}
+
+.carousel-posts .glide__arrow--right .svg-icon {
+	transform: rotate(-90deg);
+}
+
+.carousel-posts .glide__arrow .svg-icon {
+	width: 1em;
+	height: 1em;
+}
+
+/*--------------------------------------------------------------
+# Related Posts Carousel
+--------------------------------------------------------------*/
+.pb-related-posts-title {
+	margin-bottom: 1.5em;
+	padding: .5em 0;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 1.3em;
+}
+
+.carousel-related-posts .carousel-post-title-wrap {
+	margin-right: .7em;
+	margin-left: .7em;
+}
+
+.carousel-related-posts {
+	color: inherit;
+}
+
+.carousel-related-posts .glide__slide,
+.carousel-related-posts .glide__arrow {
+	background: inherit;
+}
+
+/*--------------------------------------------------------------
+# Sidebar Widgets
+--------------------------------------------------------------*/
+.c-sidebar .widget .widget-title::after,
+.c-sidebar .widget_block h1:first-child::after,
+.c-sidebar .widget_block h2:first-child::after,
+.c-sidebar .widget_block h3:first-child::after {
+	background: #537cff;
+}
+
+/*--------------------------------------------------------------
+# Footer Widgets
+--------------------------------------------------------------*/
+.footer-widgets {
+	background: #0e0e11;
+}
+
+.footer-widgets .widget {
+	margin: 0 0 1.7em;
+}
+
+.footer-widgets .widget .widget-title,
+.footer-widgets .widget_block h1:first-child,
+.footer-widgets .widget_block h2:first-child,
+.footer-widgets .widget_block h3:first-child {
+	position: relative;
+	margin-bottom: 1.4em;
+	padding-bottom: .7em;
+}
+
+.footer-widgets .widget .widget-title::after,
+.footer-widgets .widget_block h1:first-child::after,
+.footer-widgets .widget_block h2:first-child::after,
+.footer-widgets .widget_block h3:first-child::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	width: 40px;
+	height: 2px;
+	background: #ff4056;
+}
+
+.footer-widgets .widget li::before {
+	content: "\25B8";
+	display: inline-block;
+	width: 1em;
+	margin-left: 5px;
+	font-weight: bold;
+	color: #ff4056;
+}
+
+/*--------------------------------------------------------------
+# Go to Top
+--------------------------------------------------------------*/
+.go-to-top:hover,
+.go-to-top:focus {
+	background: linear-gradient(0deg, #406dff 0%, #537cff 100%);
+}
+
+.go-to-top:focus {
+	box-shadow: 0px 0px 3px #406dff;
+}
+
+.go-to-top:active {
+	background: #406dff;
+}

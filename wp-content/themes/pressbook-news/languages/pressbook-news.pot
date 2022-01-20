@@ -1,0 +1,588 @@
+# Copyright (C) 2021 ScriptsTown
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: PressBook News 1.0.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/pressbook-news\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-12-20T11:06:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: pressbook-news\n"
+
+#. Theme Name of the theme
+msgid "PressBook News"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://scriptstown.com/wordpress-themes/pressbook-news/"
+msgstr ""
+
+#. Description of the theme
+msgid "PressBook News is an excellent theme for news portals, blogs, entertainment, magazine, and educational websites. It offers a fully responsive, mobile-friendly, creative layout built with modern design techniques and provides clean, easy-to-read typography. The elements of the theme include single and double sticky sidebar widget area, header and footer blocks to place resuable Gutenberg blocks, multiple page templates and page-level settings, multi-level dropdown menu, social links, topbar banner advertisement area, background, and header image. This theme can be a great choice for digital marketing and news agency websites with an interactive look and feel. The design of the blog feed is suitable for posting story and status updates, movies reviews, animes reviews, and opinions, events feed, newsflash, publishing broadcastradio messages, television news, or any type of newsfeed. The theme also offers posts carousel sliders with autoplay in the header, footer, and related posts sections. Each carousel has a set of specific options to configure them in an easy manner. The blog posts in the carousel can be shown randomly or in any order based on multiple categories and tags. This theme can also be used for schools, university, educational institutes, or academics websites to publish any course materials or notices for the students. The theme uses minimal dependencies so it loads the website very fast with high speed and offers a seamless user experience for its visitors."
+msgstr ""
+
+#. Author of the theme
+msgid "ScriptsTown"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://scriptstown.com/"
+msgstr ""
+
+#: functions.php:101
+msgctxt "page title"
+msgid "PressBook News"
+msgstr ""
+
+#: functions.php:112
+msgctxt "menu title"
+msgid "PressBook News"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:65
+msgid "Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:66
+msgid "You can customize the posts carousel options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:223
+msgid "Show in Front Page"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:244
+msgid "Show in Blog Page"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:265
+msgid "Show in Archive Pages"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:286
+msgid "Show in Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:307
+msgid "Show in Pages"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:843
+#: template-parts/related-posts.php:88
+msgctxt "carousel previous"
+msgid "prev"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:847
+#: template-parts/related-posts.php:92
+msgctxt "carousel next"
+msgid "next"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:917
+msgid "Header Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:918
+msgid "You can customize the header posts carousel options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:924
+msgid "Enable Header Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:928
+#: inc/classes/class-pressbook-news-carousel-posts.php:1004
+#: inc/classes/class-pressbook-news-related-posts.php:113
+msgid "Enable Autoplay"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:940
+msgid "Header Carousel Posts Source"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:941
+#: inc/classes/class-pressbook-news-carousel-posts.php:1017
+#: inc/classes/class-pressbook-news-related-posts.php:181
+msgid "Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:942
+#: inc/classes/class-pressbook-news-carousel-posts.php:1018
+#: inc/classes/class-pressbook-news-related-posts.php:182
+msgid "Tags"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:943
+msgid "Header Carousel Posts Count"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:944
+msgid "Header Carousel Posts Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:945
+msgid "Header Carousel Posts Order By"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:948
+#: inc/classes/class-pressbook-news-carousel-posts.php:1024
+msgid "Default: All Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:949
+msgid "Select the categories for the carousel posts in the header. You can select multiple categories by holding the CTRL key."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:950
+msgid "Select the tags for the carousel posts in the header. You can select multiple tags by holding the CTRL key."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:951
+#: inc/classes/class-pressbook-news-carousel-posts.php:1027
+msgid "Set the number of related posts. Default: 8"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:952
+#: inc/classes/class-pressbook-news-carousel-posts.php:1028
+#: inc/classes/class-pressbook-news-related-posts.php:239
+msgid "Designates the ascending or descending order. Default: Latest First"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:953
+#: inc/classes/class-pressbook-news-carousel-posts.php:1029
+#: inc/classes/class-pressbook-news-related-posts.php:266
+msgid "Sort retrieved related posts by parameter. Default: Random Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:965
+msgid "Header Carousel Total Posts Per View (Extra Large Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:966
+msgid "Header Carousel Total Posts Per View (Large Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:967
+msgid "Header Carousel Total Posts Per View (Medium Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:968
+msgid "Header Carousel Total Posts Per View (Small Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:969
+msgid "Header Carousel Total Posts Per View (Extra Small Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:972
+#: inc/classes/class-pressbook-news-carousel-posts.php:1048
+msgid "Default: 4"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:973
+#: inc/classes/class-pressbook-news-carousel-posts.php:1049
+msgid "Default: 3"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:974
+#: inc/classes/class-pressbook-news-carousel-posts.php:1050
+#: inc/classes/class-pressbook-news-related-posts.php:441
+#: inc/classes/class-pressbook-news-related-posts.php:442
+msgid "Default: 2"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:975
+#: inc/classes/class-pressbook-news-carousel-posts.php:976
+#: inc/classes/class-pressbook-news-carousel-posts.php:1051
+#: inc/classes/class-pressbook-news-carousel-posts.php:1052
+#: inc/classes/class-pressbook-news-related-posts.php:443
+#: inc/classes/class-pressbook-news-related-posts.php:444
+#: inc/classes/class-pressbook-news-related-posts.php:445
+msgid "Default: 1"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:993
+msgid "Footer Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:994
+msgid "You can customize the footer posts carousel options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1000
+msgid "Enable Footer Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1016
+msgid "Footer Carousel Posts Source"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1019
+msgid "Footer Carousel Posts Count"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1020
+msgid "Footer Carousel Posts Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1021
+msgid "Footer Carousel Posts Order By"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1025
+msgid "Select the categories for the carousel posts in the footer. You can select multiple categories by holding the CTRL key."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1026
+msgid "Select the tags for the carousel posts in the footer. You can select multiple tags by holding the CTRL key."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1041
+msgid "Footer Carousel Total Posts Per View (Extra Large Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1042
+msgid "Footer Carousel Total Posts Per View (Large Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1043
+msgid "Footer Carousel Total Posts Per View (Medium Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1044
+msgid "Footer Carousel Total Posts Per View (Small Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel-posts.php:1045
+msgid "Footer Carousel Total Posts Per View (Extra Small Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:21
+msgid "All Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:22
+msgid "Posts from Selected Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:23
+msgid "Posts from Selected Tags"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:34
+msgctxt "Carousel Posts Count"
+msgid "1"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:35
+msgctxt "Carousel Posts Count"
+msgid "2"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:36
+msgctxt "Carousel Posts Count"
+msgid "3"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:37
+msgctxt "Carousel Posts Count"
+msgid "4"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:38
+msgctxt "Carousel Posts Count"
+msgid "5"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:39
+msgctxt "Carousel Posts Count"
+msgid "6"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:40
+msgctxt "Carousel Posts Count"
+msgid "7"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:41
+msgctxt "Carousel Posts Count"
+msgid "8"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:42
+msgctxt "Carousel Posts Count"
+msgid "9"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:43
+msgctxt "Carousel Posts Count"
+msgid "10"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:44
+msgctxt "Carousel Posts Count"
+msgid "11"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:45
+msgctxt "Carousel Posts Count"
+msgid "12"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:46
+msgctxt "Carousel Posts Count"
+msgid "13"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:47
+msgctxt "Carousel Posts Count"
+msgid "14"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:48
+msgctxt "Carousel Posts Count"
+msgid "15"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:59
+msgid "Latest First"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:60
+msgid "Oldest First"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:71
+msgid "Random Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:72
+msgid "Post Date"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:73
+msgid "Last Modified Date"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:84
+msgctxt "Carousel Posts Per View"
+msgid "1"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:85
+msgctxt "Carousel Posts Per View"
+msgid "2"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:86
+msgctxt "Carousel Posts Per View"
+msgid "3"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:87
+msgctxt "Carousel Posts Per View"
+msgid "4"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:88
+msgctxt "Carousel Posts Per View"
+msgid "5"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:89
+msgctxt "Carousel Posts Per View"
+msgid "6"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:90
+msgctxt "Carousel Posts Per View"
+msgid "7"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-carousel.php:91
+msgctxt "Carousel Posts Per View"
+msgid "8"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by IBM Plex Serif, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-news-editor.php:41
+msgctxt "IBM Plex Serif font (in the editor): on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Lora, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-news-editor.php:47
+msgctxt "Lora font (in the editor): on or off"
+msgid "on"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-primarynavbar.php:45
+msgid "Primary Navbar Hover Background Color"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-primarynavbar.php:75
+msgid "Hide Top Border"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-primarynavbar.php:76
+msgid "Hide the top border of the menu item on hover or active state."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:45
+msgid "Related Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:46
+msgid "You can customize the related posts carousel options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:72
+msgid "Enable Related Posts Carousel"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:154
+msgid "Related Posts Title"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:155
+msgid "You can change the heading of the related posts that is shown below the single post content."
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:184
+msgid "Related Posts Based On"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:185
+msgid "Select the source for related posts to display. Default: Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:211
+msgid "Related Posts Count"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:212
+msgid "Set the number of related posts. Default: 6"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:238
+msgid "Related Posts Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:265
+msgid "Related Posts Order By"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:293
+msgid "Related Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:434
+msgid "Related Posts Per View Inside Carousel (Extra Large Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:435
+msgid "Related Posts Per View Inside Carousel (Large Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:436
+msgid "Related Posts Per View Inside Carousel (Medium Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:437
+msgid "Related Posts Per View Inside Carousel (Small Screen-Devices)"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-related-posts.php:438
+msgid "Related Posts Per View Inside Carousel (Extra Small Screen-Devices)"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by IBM Plex Serif, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-news-scripts.php:108
+msgctxt "IBM Plex Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Lora, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-news-scripts.php:114
+msgctxt "Lora font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:30
+msgctxt "Default: Logo Size (Small-Screen Devices)"
+msgid "Default: Size 1"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:31
+msgctxt "Default: Logo Size (Medium-Screen Devices)"
+msgid "Default: Size 2"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:32
+msgctxt "Default: Logo Size (Large-Screen Devices)"
+msgid "Default: Size 3"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:34
+msgctxt "Default: Site Title Size (Small-Screen Devices)"
+msgid "Default: Size 2"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:35
+msgctxt "Default: Site Title Size (Medium-Screen Devices)"
+msgid "Default: Size 4"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:36
+msgctxt "Default: Site Title Size (Large-Screen Devices)"
+msgid "Default: Size 4"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:38
+msgctxt "Default: Tagline (Small-Screen Devices)"
+msgid "Default: Size 2"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:39
+msgctxt "Default: Tagline (Medium-Screen Devices)"
+msgid "Default: Size 3"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-siteidentity.php:40
+msgctxt "Default: Tagline (Large-Screen Devices)"
+msgid "Default: Size 3"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-upsell.php:34
+#: inc/classes/class-pressbook-news-upsell.php:50
+#: inc/classes/class-pressbook-news-upsell.php:66
+msgid "Learn More"
+msgstr ""
+
+#: inc/classes/class-pressbook-news-upsell.php:35
+#: inc/classes/class-pressbook-news-upsell.php:51
+#: inc/classes/class-pressbook-news-upsell.php:67
+msgid "Custom color options for carousel arrow buttons, custom slide text color, background color, and RGBA color options are available in our premium version."
+msgstr ""
+
+#: single.php:28
+msgid "Previous Post:"
+msgstr ""
+
+#: single.php:30
+msgid "Next Post:"
+msgstr ""
+
+#: template-parts/header/primary-navbar.php:14
+msgid "Primary Menu"
+msgstr ""
+
+#: template-parts/header/top-navbar.php:34
+msgid "Social Links"
+msgstr ""
