@@ -1,3 +1,215 @@
+//Note.swift
+
+import CoreData
+
+@objc(Note)
+class Note: NSManagedObject
+{
+	@NSManaged var id: NSNumber!
+	@NSManaged var title: String!
+	@NSManaged var desc: String!
+	@NSManaged var deletedDate: Date?
+}
+
+//NoteCell.swift
+import UIKit
+
+class NoteCell: UITableViewCell
+{
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var descLabel: UILabel!
+}
+
+//NoteDetailVC.swift
+import UIKit
+import CoreData
+
+class NoteDetailVC: UIViewController
+{
+	@IBOutlet weak var titleTF: UITextField!
+	@IBOutlet weak var descTV: UITextView!
+	
+	var selectedNote: Note? = nil
+	
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		if(selectedNote != nil)
+		{
+			titleTF.text = selectedNote?.title
+			descTV.text = selectedNote?.desc
+		}
+	}
+
+
+	@IBAction func saveAction(_ sender: Any)
+	{
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+		if(selectedNote == nil)
+		{
+			let entity = NSEntityDescription.entity(forEntityName: "Note", in: context)
+			let newNote = Note(entity: entity!, insertInto: context)
+			newNote.id = noteList.count as NSNumber
+			newNote.title = titleTF.text
+			newNote.desc = descTV.text
+			do
+			{
+				try context.save()
+				noteList.append(newNote)
+				navigationController?.popViewController(animated: true)
+			}
+			catch
+			{
+				print("context save error")
+			}
+		}
+		else //edit
+		{
+			let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+			do {
+				let results:NSArray = try context.fetch(request) as NSArray
+				for result in results
+				{
+					let note = result as! Note
+					if(note == selectedNote)
+					{
+						note.title = titleTF.text
+						note.desc = descTV.text
+						try context.save()
+						navigationController?.popViewController(animated: true)
+					}
+				}
+			}
+			catch
+			{
+				print("Fetch Failed")
+			}
+		}
+	}
+	
+	@IBAction func DeleteNote(_ sender: Any)
+	{
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+		
+		let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+		do {
+			let results:NSArray = try context.fetch(request) as NSArray
+			for result in results
+			{
+				let note = result as! Note
+				if(note == selectedNote)
+				{
+					note.deletedDate = Date()
+					try context.save()
+					navigationController?.popViewController(animated: true)
+				}
+			}
+		}
+		catch
+		{
+			print("Fetch Failed")
+		}
+	}
+	
+}
+
+//NoteTableView.swift
+import UIKit
+import CoreData
+
+var noteList = [Note]()
+
+class NoteTableView: UITableViewController
+{
+	var firstLoad = true
+	
+	func nonDeletedNotes() -> [Note]
+	{
+		var noDeleteNoteList = [Note]()
+		for note in noteList
+		{
+			if(note.deletedDate == nil)
+			{
+				noDeleteNoteList.append(note)
+			}
+		}
+		return noDeleteNoteList
+	}
+	
+	override func viewDidLoad()
+	{
+		if(firstLoad)
+		{
+			firstLoad = false
+			let appDelegate = UIApplication.shared.delegate as! AppDelegate
+			let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+			let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+			do {
+				let results:NSArray = try context.fetch(request) as NSArray
+				for result in results
+				{
+					let note = result as! Note
+					noteList.append(note)
+				}
+			}
+			catch
+			{
+				print("Fetch Failed")
+			}
+		}
+	}
+	
+	
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+	{
+		let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell
+		
+		let thisNote: Note!
+		thisNote = nonDeletedNotes()[indexPath.row]
+		
+		noteCell.titleLabel.text = thisNote.title
+		noteCell.descLabel.text = thisNote.desc
+		
+		return noteCell
+	}
+	
+	
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+	{
+		return nonDeletedNotes().count
+	}
+	
+	override func viewDidAppear(_ animated: Bool)
+	{
+		tableView.reloadData()
+	}
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+	{
+		self.performSegue(withIdentifier: "editNote", sender: self)
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+	{
+		if(segue.identifier == "editNote")
+		{
+			let indexPath = tableView.indexPathForSelectedRow!
+			
+			let noteDetail = segue.destination as? NoteDetailVC
+			
+			let selectedNote : Note!
+			selectedNote = nonDeletedNotes()[indexPath.row]
+			noteDetail!.selectedNote = selectedNote
+			
+			tableView.deselectRow(at: indexPath, animated: true)
+		}
+	}
+	
+	
+}
+////
 //editable cell - reorder and delete
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
